@@ -53,23 +53,6 @@ proceso_analitico.md ← full decision log (Spanish)
 
 ---
 
-## Methodology
-
-This project follows **La Receta del Data Analyst** — an 8-phase end-to-end framework:
-
-| Phase | Name | Status |
-|-------|------|--------|
-| 1 | Understand the Context | ✅ |
-| 2 | Initial Exploration (EDA) | ✅ |
-| 3 | Data Cleaning | ✅ |
-| 4 | Feature Engineering | ✅ |
-| 5 | Deep Exploratory Analysis | ✅ |
-| 6 | Visualization & Dashboard | ✅ |
-| 7 | Documentation & Storytelling | ✅ |
-| 8 | Delivery & Publication | ✅ |
-
----
-
 ## Tech Stack
 
 - **Python** — Pandas, Matplotlib, Seaborn (Jupyter Notebooks)
