@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Jupyter
+.jupyter/
+
+# Data — raw never goes to GitHub (too heavy)
+pizza_sales/
+data/raw/
+
+# Screenshots temp folder
+screenshots/
+
+# Power BI temp files
+*.pbix.bak
+
+# Dev tools
+.claude/
+.atl/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Anaconda envs
+*.egg-info/

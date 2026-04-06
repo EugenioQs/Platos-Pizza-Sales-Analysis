@@ -1,0 +1,33 @@
+pizza_type_id,name,category,revenue,qty,orders,revenue_rank,revenue_pct,abc_class
+thai_ckn,The Thai Chicken Pizza,Chicken,43434.25,2371,2225,1,5.31,A
+bbq_ckn,The Barbecue Chicken Pizza,Chicken,42768.0,2432,2273,2,5.23,A
+cali_ckn,The California Chicken Pizza,Chicken,41409.5,2370,2197,3,5.06,A
+classic_dlx,The Classic Deluxe Pizza,Classic,38180.5,2453,2329,4,4.67,A
+spicy_ital,The Spicy Italian Pizza,Supreme,34831.25,1924,1822,5,4.26,A
+southw_ckn,The Southwest Chicken Pizza,Chicken,34705.75,1917,1825,6,4.24,A
+ital_supr,The Italian Supreme Pizza,Supreme,33476.75,1884,1791,7,4.09,A
+hawaiian,The Hawaiian Pizza,Classic,32273.25,2422,2280,8,3.95,A
+four_cheese,The Four Cheese Pizza,Veggie,32265.7,1902,1809,9,3.95,B
+sicilian,The Sicilian Pizza,Supreme,30940.5,1938,1820,10,3.78,B
+pepperoni,The Pepperoni Pizza,Classic,30161.75,2418,2278,11,3.69,B
+the_greek,The Greek Pizza,Classic,28454.1,1420,1361,12,3.48,B
+mexicana,The Mexicana Pizza,Veggie,26780.75,1484,1426,13,3.27,B
+five_cheese,The Five Cheese Pizza,Veggie,26066.5,1409,1359,14,3.19,B
+peppr_salami,The Pepper Salami Pizza,Supreme,25529.0,1446,1383,15,3.12,B
+ital_cpcllo,The Italian Capocollo Pizza,Classic,25094.0,1438,1380,16,3.07,B
+veggie_veg,The Vegetables + Vegetables Pizza,Veggie,24374.75,1526,1463,17,2.98,B
+prsc_argla,The Prosciutto and Arugula Pizza,Supreme,24193.25,1457,1398,18,2.96,B
+napolitana,The Napolitana Pizza,Classic,24087.0,1464,1421,19,2.95,B
+spinach_fet,The Spinach and Feta Pizza,Veggie,23271.25,1446,1402,20,2.85,B
+big_meat,The Big Meat Pizza,Classic,22968.0,1914,1811,21,2.81,C
+pep_msh_pep,"The Pepperoni, Mushroom, and Peppers Pizza",Classic,18834.5,1359,1316,22,2.3,C
+ckn_alfredo,The Chicken Alfredo Pizza,Chicken,16900.25,987,967,23,2.07,C
+ckn_pesto,The Chicken Pesto Pizza,Chicken,16701.75,973,938,24,2.04,C
+soppressata,The Soppressata Pizza,Supreme,16425.75,961,941,25,2.01,C
+ital_veggie,The Italian Vegetables Pizza,Veggie,16019.25,981,952,26,1.96,C
+calabrese,The Calabrese Pizza,Supreme,15934.25,937,918,27,1.95,C
+spin_pesto,The Spinach Pesto Pizza,Veggie,15596.0,970,945,28,1.91,C
+mediterraneo,The Mediterranean Pizza,Veggie,15360.5,934,912,29,1.88,C
+spinach_supr,The Spinach Supreme Pizza,Supreme,15277.75,950,918,30,1.87,C
+green_garden,The Green Garden Pizza,Veggie,13955.75,997,976,31,1.71,C
+brie_carre,The Brie Carre Pizza,Supreme,11588.5,490,480,32,1.42,C

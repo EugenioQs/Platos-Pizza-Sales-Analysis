@@ -1,0 +1,15 @@
+category,size_label,size_order,revenue,qty
+Chicken,Small,1,28356.0,2224
+Chicken,Medium,2,65224.5,3894
+Chicken,Large,3,102339.0,4932
+Classic,Small,1,69870.25,6139
+Classic,Medium,2,60581.75,4112
+Classic,Large,3,74518.5,4057
+Classic,X-Large,4,14076.0,552
+Classic,XX-Large,5,1006.6000000000001,28
+Supreme,Small,1,47463.5,3377
+Supreme,Medium,2,66475.0,4046
+Supreme,Large,3,94258.5,4564
+Veggie,Small,1,32386.75,2663
+Veggie,Medium,2,57101.0,3583
+Veggie,Large,3,104202.7,5403
