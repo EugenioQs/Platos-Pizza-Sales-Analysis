@@ -1,10 +1,10 @@
 """
-Genera los 3 templates de fondo para el dashboard de Plato's Pizza en Power BI.
+Generates the 3 background templates for the Plato's Pizza Power BI dashboard.
 Outputs: visuals/template_p1_resumen.png
          visuals/template_p2_operaciones.png
          visuals/template_p3_menu.png
 
-Uso: python visuals/generate_templates.py
+Usage: python visuals/generate_templates.py
 """
 
 import matplotlib.pyplot as plt
@@ -92,7 +92,7 @@ def draw_header(ax, subtitle):
     ax.text(20, 50, subtitle,
             color=LIGHT_TEXT, fontsize=9, va="top", zorder=4,
             fontfamily="sans-serif")
-    ax.text(20, 68, "Análisis 2015 · Plato's Pizza",
+    ax.text(20, 68, "2015 Analysis · Plato's Pizza",
             color="#666666", fontsize=7, va="top", zorder=4,
             fontfamily="sans-serif")
 
@@ -114,7 +114,7 @@ def draw_header(ax, subtitle):
         facecolor=PILL_BG, edgecolor="none", zorder=4,
     )
     ax.add_patch(pill)
-    ax.text(535, 42, "Filtros  ▼",
+    ax.text(535, 42, "Filters  ▼",
             color=WHITE, fontsize=8, fontweight="bold",
             ha="center", va="center", zorder=5,
             fontfamily="sans-serif")
@@ -154,100 +154,100 @@ def save(fig, filename):
     print(f"  OK  {filename}")
 
 
-# ─── PÁGINA 1 — Resumen Ejecutivo ─────────────────────────────────────────────
+# ─── PAGE 1 — Executive Summary ───────────────────────────────────────────────
 
 def page1():
     fig, ax = make_fig()
-    draw_header(ax, "Resumen Ejecutivo")
+    draw_header(ax, "Executive Summary")
 
-    # Fila 1 — 5 KPI cards
-    kpi_titles = ["Revenue Total", "Total Pedidos", "Pizzas Vendidas", "Ticket Promedio", "Pedidos / Día"]
+    # Row 1 — 5 KPI cards
+    kpi_titles = ["Total Revenue", "Total Orders", "Pizzas Sold", "Avg Ticket", "Orders / Day"]
     n = len(kpi_titles)
     kpi_w = (W - 2 * MARGIN - (n - 1) * GAP) / n
     for i, title in enumerate(kpi_titles):
         card(ax, MARGIN + i * (kpi_w + GAP), ROW1_Y, kpi_w, ROW1_H, title)
 
-    # Fila 2 — Line chart (60%) + Donut (40%)
+    # Row 2 — Line chart (60%) + Donut (40%)
     y2 = ROW1_Y + ROW1_H + GAP
     h2 = 222
     usable = W - 2 * MARGIN - GAP
     w2a = usable * 0.60
     w2b = usable * 0.40
-    card(ax, MARGIN,            y2, w2a, h2, "Tendencia de Revenue Mensual")
-    card(ax, MARGIN + w2a + GAP, y2, w2b, h2, "Revenue por Categoría")
+    card(ax, MARGIN,            y2, w2a, h2, "Monthly Revenue Trend")
+    card(ax, MARGIN + w2a + GAP, y2, w2b, h2, "Revenue by Category")
 
-    # Fila 3 — Bar chart (50%) + Texto días cerrados (50%)
+    # Row 3 — Bar chart (50%) + Operating context (50%)
     y3 = y2 + h2 + GAP
     h3 = H - MARGIN - y3
     w3 = (W - 2 * MARGIN - GAP) / 2
-    card(ax, MARGIN,            y3, w3, h3, "Pedidos por Día de la Semana")
-    card(ax, MARGIN + w3 + GAP, y3, w3, h3, "Contexto Operativo")
+    card(ax, MARGIN,            y3, w3, h3, "Orders by Day of Week")
+    card(ax, MARGIN + w3 + GAP, y3, w3, h3, "Operating Context")
 
     save(fig, "template_p1_resumen.png")
 
 
-# ─── PÁGINA 2 — Operaciones ───────────────────────────────────────────────────
+# ─── PAGE 2 — Operations ──────────────────────────────────────────────────────
 
 def page2():
     fig, ax = make_fig()
-    draw_header(ax, "Operaciones")
+    draw_header(ax, "Operations")
 
-    # Fila 1 — 3 KPI cards
-    kpi_titles = ["Hora Pico", "Día Más Activo", "Días Operados"]
+    # Row 1 — 3 KPI cards
+    kpi_titles = ["Peak Hour", "Busiest Day", "Operating Days"]
     n = len(kpi_titles)
     kpi_w = (W - 2 * MARGIN - (n - 1) * GAP) / n
     for i, title in enumerate(kpi_titles):
         card(ax, MARGIN + i * (kpi_w + GAP), ROW1_Y, kpi_w, ROW1_H, title)
 
-    # Fila 2 — Heatmap izquierda + Bloques Horarios derecha (expandido)
+    # Row 2 — Heatmap left + Time Blocks right (expanded)
     y2 = ROW1_Y + ROW1_H + GAP
     usable = W - 2 * MARGIN - GAP
     w_heat = usable * 0.58
     w_right = usable * 0.42
     h2 = 240
 
-    card(ax, MARGIN, y2, w_heat, h2, "Mapa de Calor — Pedidos por Hora y Día")
-    card(ax, MARGIN + w_heat + GAP, y2, w_right, h2, "Bloques Horarios")
+    card(ax, MARGIN, y2, w_heat, h2, "Heat Map — Orders by Hour and Day")
+    card(ax, MARGIN + w_heat + GAP, y2, w_right, h2, "Time Blocks")
 
-    # Fila 3 — Distribución por Hora (40%) + Revenue Semanal (60%)
+    # Row 3 — Orders by Hour (40%) + Weekly Revenue (60%)
     y3 = y2 + h2 + GAP
     h3 = H - MARGIN - y3
     w3a = usable * 0.40
     w3b = usable * 0.60
-    card(ax, MARGIN, y3, w3a, h3, "Distribución de Pedidos por Hora")
-    card(ax, MARGIN + w3a + GAP, y3, w3b, h3, "Revenue por Semana del Año")
+    card(ax, MARGIN, y3, w3a, h3, "Orders Distribution by Hour")
+    card(ax, MARGIN + w3a + GAP, y3, w3b, h3, "Revenue by Week of Year")
 
     save(fig, "template_p2_operaciones.png")
 
 
-# ─── PÁGINA 3 — Menú & Productos ──────────────────────────────────────────────
+# ─── PAGE 3 — Menu & Products ─────────────────────────────────────────────────
 
 def page3():
     fig, ax = make_fig()
-    draw_header(ax, "Menú & Productos")
+    draw_header(ax, "Menu & Products")
 
-    # Fila 1 — 3 KPI cards
-    kpi_titles = ["Pizzas en Menú", "Pizza Top Revenue", "Pizza Top Unidades"]
+    # Row 1 — 3 KPI cards
+    kpi_titles = ["Pizzas on Menu", "Top Revenue Pizza", "Top Units Pizza"]
     n = len(kpi_titles)
     kpi_w = (W - 2 * MARGIN - (n - 1) * GAP) / n
     for i, title in enumerate(kpi_titles):
         card(ax, MARGIN + i * (kpi_w + GAP), ROW1_Y, kpi_w, ROW1_H, title)
 
-    # Fila 2 — Bar horizontal (55%) + Scatter (45%)
+    # Row 2 — Horizontal bar (55%) + Scatter (45%)
     y2 = ROW1_Y + ROW1_H + GAP
     h2 = 240
     usable = W - 2 * MARGIN - GAP
     w2a = usable * 0.55
     w2b = usable * 0.45
-    card(ax, MARGIN,             y2, w2a, h2, "Revenue por Pizza — Clasificación ABC")
-    card(ax, MARGIN + w2a + GAP, y2, w2b, h2, "Volumen vs Revenue — Outliers de Menú")
+    card(ax, MARGIN,             y2, w2a, h2, "Revenue by Pizza — ABC Classification")
+    card(ax, MARGIN + w2a + GAP, y2, w2b, h2, "Volume vs Revenue — Menu Outliers")
 
-    # Fila 3 — Stacked bar (50%) + Tabla (50%)
+    # Row 3 — Stacked bar (50%) + Table (50%)
     y3 = y2 + h2 + GAP
     h3 = H - MARGIN - y3
     w3 = (W - 2 * MARGIN - GAP) / 2
-    card(ax, MARGIN,             y3, w3, h3, "Tamaño Más Popular por Categoría")
-    card(ax, MARGIN + w3 + GAP,  y3, w3, h3, "Performance Completa del Menú")
+    card(ax, MARGIN,             y3, w3, h3, "Most Popular Size by Category")
+    card(ax, MARGIN + w3 + GAP,  y3, w3, h3, "Full Menu Performance")
 
     save(fig, "template_p3_menu.png")
 
@@ -255,8 +255,8 @@ def page3():
 # ─── Main ─────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    print("Generando templates...")
+    print("Generating templates...")
     page1()
     page2()
     page3()
-    print("Listo. Archivos en visuals/")
+    print("Done. Files in visuals/")

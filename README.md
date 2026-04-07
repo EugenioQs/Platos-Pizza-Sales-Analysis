@@ -48,7 +48,7 @@ Built in Power BI — 3 pages, one per audience.
 /notebooks/         ← Jupyter notebooks, one per phase
 /powerbi/           ← Power BI dashboard (.pbix)
 /visuals/           ← dashboard screenshots + templates
-proceso_analitico.md ← full decision log (Spanish)
+analysis_decisions.md ← analytical decision log per phase
 ```
 
 ---
@@ -66,7 +66,7 @@ proceso_analitico.md ← full decision log (Spanish)
 1. Clone the repository
 2. Open any notebook in `/notebooks/` with Jupyter (Anaconda recommended)
 3. Run cells top to bottom — each notebook reads from `data/clean/` and outputs to the same folder
-4. Open `powerbi/Dashboard_Pizzeria.pbix` in Power BI Desktop
+4. Open `powerbi/Dashboard_Pizzeria 2.0.pbix` in Power BI Desktop
 
 ---
 
