@@ -47,8 +47,9 @@ Built in Power BI — 3 pages, one per audience.
 /data/clean/        ← cleaned dataset + aggregation tables
 /notebooks/         ← Jupyter notebooks, one per phase
 /powerbi/           ← Power BI dashboard (.pbix)
-/visuals/           ← dashboard screenshots + templates
-analysis_decisions.md ← analytical decision log per phase
+/visuals/           ← dashboard screenshots
+analysis_decisions.md  ← analytical decision log per phase
+data_dictionary.csv    ← field-level metadata for all tables
 ```
 
 ---
@@ -73,4 +74,4 @@ analysis_decisions.md ← analytical decision log per phase
 ## Author
 
 **Eugenio Quintero** — Data Analyst  
-[GitHub](https://github.com/EugenioQs)
+[GitHub](https://github.com/EugenioQs) · [LinkedIn](https://www.linkedin.com/in/eugenioqs/)
