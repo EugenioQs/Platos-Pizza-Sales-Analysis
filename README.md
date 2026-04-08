@@ -29,6 +29,8 @@ End-to-end data analytics project using the [Pizza Place Sales dataset](https://
 
 Built in Power BI — 3 pages, one per audience.
 
+**[View live dashboard →](https://app.powerbi.com/links/KR2bo5mHD1?ctid=b077b6e5-d2aa-44a5-a4b6-212ef1c01101&pbi_source=linkShare)**
+
 ### Page 1 — Executive Summary
 ![Executive Summary](visuals/dashboard_p1_resumen.png)
 
